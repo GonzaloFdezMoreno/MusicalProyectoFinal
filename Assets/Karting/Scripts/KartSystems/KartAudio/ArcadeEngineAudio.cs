@@ -40,25 +40,25 @@ namespace KartGame.KartSystems
             if (arcadeKart != null)
             {
                 kartSpeed = arcadeKart.LocalSpeed();
-                Drift.volume = arcadeKart.IsDrifting && arcadeKart.GroundPercent > 0.0f ? arcadeKart.Rigidbody.velocity.magnitude / arcadeKart.GetMaxSpeed() : 0.0f;
+                //Drift.volume = arcadeKart.IsDrifting && arcadeKart.GroundPercent > 0.0f ? arcadeKart.Rigidbody.velocity.magnitude / arcadeKart.GetMaxSpeed() : 0.0f;
             }
 
-            IdleSound.volume    = Mathf.Lerp(0.6f, 0.0f, kartSpeed * 4);
+            //IdleSound.volume    = Mathf.Lerp(0.6f, 0.0f, kartSpeed * 4);
 
-            if (kartSpeed < 0.0f)
-            {
-                // In reverse
-                RunningSound.volume = 0.0f;
-                ReverseSound.volume = Mathf.Lerp(0.1f, ReverseSoundMaxVolume, -kartSpeed * 1.2f);
-                ReverseSound.pitch = Mathf.Lerp(0.1f, ReverseSoundMaxPitch, -kartSpeed + (Mathf.Sin(Time.time) * .1f));
-            }
-            else
-            {
-                // Moving forward
-                ReverseSound.volume = 0.0f;
-                RunningSound.volume = Mathf.Lerp(0.1f, RunningSoundMaxVolume, kartSpeed * 1.2f);
-                RunningSound.pitch = Mathf.Lerp(0.3f, RunningSoundMaxPitch, kartSpeed + (Mathf.Sin(Time.time) * .1f));
-            }
+            //if (kartSpeed < 0.0f)
+            //{
+            //    // In reverse
+            //    RunningSound.volume = 0.0f;
+            //    ReverseSound.volume = Mathf.Lerp(0.1f, ReverseSoundMaxVolume, -kartSpeed * 1.2f);
+            //    ReverseSound.pitch = Mathf.Lerp(0.1f, ReverseSoundMaxPitch, -kartSpeed + (Mathf.Sin(Time.time) * .1f));
+            //}
+            //else
+            //{
+            //    // Moving forward
+            //    ReverseSound.volume = 0.0f;
+            //    RunningSound.volume = Mathf.Lerp(0.1f, RunningSoundMaxVolume, kartSpeed * 1.2f);
+            //    RunningSound.pitch = Mathf.Lerp(0.3f, RunningSoundMaxPitch, kartSpeed + (Mathf.Sin(Time.time) * .1f));
+            //}
 
             
         }

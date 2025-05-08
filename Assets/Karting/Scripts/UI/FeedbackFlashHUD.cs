@@ -58,14 +58,14 @@ public class FeedbackFlashHUD : MonoBehaviour
             {
                 vignetteCanvasGroup.alpha = ((Mathf.Sin(Time.time * pulsatingVignetteFrequency) / 2) + 0.5f) * vignetteAlpha;
 
-                if(!warningSoundPlayed && vignetteCanvasGroup.alpha >= 0.5f){
+                /*if(!warningSoundPlayed && vignetteCanvasGroup.alpha >= 0.5f){
                     m_audioSource.PlayOneShot(warningAudioClip);
                     warningSoundPlayed = true;
                 }
 
                 if(vignetteCanvasGroup.alpha < 0.5f){
                     warningSoundPlayed = false;
-                }
+                }*/
 
             }
         }

@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
+using FMODUnity;
 
 /// <summary>
 /// This class inherits from TargetObject and represents a PickupObject.
 /// </summary>
 public class PickupObject : TargetObject
 {
+    FMODUnity.StudioEventEmitter sound;
+    [SerializeField]
+    private GameObject refAud;
+
     [Header("PickupObject")]
 
     [Tooltip("New Gameobject (a VFX for example) to spawn when you trigger this PickupObject")]
@@ -16,15 +21,20 @@ public class PickupObject : TargetObject
     [Tooltip("Destroy this gameobject after collectDuration seconds")]
     public float collectDuration = 0f;
 
+    
+
     void Start() {
         Register();
+        sound=refAud.GetComponent<FMODUnity.StudioEventEmitter>();
+
     }
 
     void OnCollect()
     {
         if (CollectSound)
         {
-            AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+            //AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+            sound.SetParameter("Parameter 1", 8);
         }
 
         if (spawnPrefabOnPickup)

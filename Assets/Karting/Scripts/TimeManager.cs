@@ -19,6 +19,7 @@ public class TimeManager : MonoBehaviour
     {
         IsFinite = false;
         TimeRemaining = TotalTime;
+        Debug.Log(TotalTime);
     }
 
 
