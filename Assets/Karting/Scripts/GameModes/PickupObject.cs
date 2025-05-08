@@ -9,6 +9,8 @@ public class PickupObject : TargetObject
     FMODUnity.StudioEventEmitter sound;
     [SerializeField]
     private GameObject refAud;
+    [SerializeField]
+    private int val;
 
     [Header("PickupObject")]
 
@@ -34,7 +36,7 @@ public class PickupObject : TargetObject
         if (CollectSound)
         {
             //AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
-            sound.SetParameter("Parameter 1", 8);
+            sound.SetParameter("Parameter 1", val);
         }
 
         if (spawnPrefabOnPickup)
