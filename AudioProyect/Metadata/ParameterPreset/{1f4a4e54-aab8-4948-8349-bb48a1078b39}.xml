@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="ParameterPreset" id="{c8ea6af7-a412-4977-87be-01761de91596}">
+	<object class="ParameterPreset" id="{1f4a4e54-aab8-4948-8349-bb48a1078b39}">
 		<property name="name">
-			<value>JumpToSong</value>
+			<value>Ontrack</value>
 		</property>
 		<relationship name="folder">
 			<destination>{f2aaab1d-3fab-405e-9da7-c2896e54f2fd}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{e0bd2f0a-f5d9-4bf0-9ad7-0b0c29bec8ee}</destination>
+			<destination>{55068783-be56-4096-80c7-801b5f681b25}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{e0bd2f0a-f5d9-4bf0-9ad7-0b0c29bec8ee}">
+	<object class="GameParameter" id="{55068783-be56-4096-80c7-801b5f681b25}">
 		<property name="parameterType">
 			<value>1</value>
 		</property>
 		<property name="maximum">
-			<value>11</value>
+			<value>6</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8f1efcfb-6750-4157-8605-8d7ea7262f10}">
+		<property name="assetPath">
+			<value>Misty Memory  Night Version .mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>242.06399999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{198386bb-5d2f-49ac-9072-0fff363eb0c1}</destination>
+		</relationship>
+	</object>
+</objects>
