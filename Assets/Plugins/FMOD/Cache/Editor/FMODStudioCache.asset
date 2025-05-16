@@ -47,7 +47,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3930366218512079016}
   cacheVersion: 131847
-  cacheTime: 638828277663166833
+  cacheTime: 638827683036004809
   SerializableEventsDict:
   - key: event:/Event1
     index: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638828277663166833
+  lastModified: 638827683035994795
   FileSizes:
   - Name: Desktop
     Value: 6902080
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638822312181722884
+  lastModified: 638827683036004809
   FileSizes:
   - Name: Desktop
     Value: 808
