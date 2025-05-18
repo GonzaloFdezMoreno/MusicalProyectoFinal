@@ -71,34 +71,10 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3930366218512079016}
   cacheVersion: 131847
-  cacheTime: 638831642044721731
+  cacheTime: 638831889810560707
   SerializableEventsDict:
   - key: event:/Event1
     index: 0
---- !u!114 &755431273539743478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Event1/JumpT
-  m_EditorClassIdentifier: 
-  Name: JumpT
-  StudioPath: 
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 1281787847
-    data2: 436837733
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &1985040538120289237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,10 +114,10 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638831642044696264
+  lastModified: 638831889810550704
   FileSizes:
   - Name: Desktop
-    Value: 10288736
+    Value: 11407808
   Exists: 1
 --- !u!114 &3930366218512079016
 MonoBehaviour:
@@ -158,10 +134,10 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638831642044721731
+  lastModified: 638831889810560707
   FileSizes:
   - Name: Desktop
-    Value: 938
+    Value: 896
   Exists: 1
 --- !u!114 &4025497674974944452
 MonoBehaviour:
@@ -188,9 +164,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -7745762005909960306}
-  - {fileID: 755431273539743478}
   - {fileID: -3813377060952571223}
   - {fileID: 1985040538120289237}
   MinDistance: 1
   MaxDistance: 20
-  Length: 355000
+  Length: 389057
