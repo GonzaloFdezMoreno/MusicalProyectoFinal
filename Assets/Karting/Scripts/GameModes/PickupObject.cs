@@ -11,6 +11,13 @@ public class PickupObject : TargetObject
     private GameObject refAud;
     [SerializeField]
     private int val;
+    [SerializeField]
+    private int tranTo;
+    [SerializeField]
+    private bool transformation=false;
+    [SerializeField]
+    private GameObject GamFlowManag; //esto es para acceder al timeManager y me modifique algunos parametros en el update dado que el objeto que lleva esto se destruye 
+    private TimeManager tman;
 
     [Header("PickupObject")]
 
@@ -29,6 +36,11 @@ public class PickupObject : TargetObject
         Register();
         sound=refAud.GetComponent<FMODUnity.StudioEventEmitter>();
 
+        if(GamFlowManag!=null)
+        {
+            tman=GamFlowManag.GetComponent<TimeManager>();
+        }
+
     }
 
     void OnCollect()
@@ -36,7 +48,13 @@ public class PickupObject : TargetObject
         if (CollectSound)
         {
             //AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
-            sound.SetParameter("Parameter 1", val);
+            sound.SetParameter("JumpToSong", val);
+            sound.SetParameter("OnTrack", tranTo);
+        }
+        if (val>0&&tman!=null)
+        {
+            transformation = true;
+            tman.SetTransformation(transformation);
         }
 
         if (spawnPrefabOnPickup)

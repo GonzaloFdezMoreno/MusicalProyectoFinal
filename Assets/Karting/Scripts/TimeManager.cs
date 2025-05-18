@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+//using FMOD;
 
 public class TimeManager : MonoBehaviour
 { 
@@ -13,13 +15,31 @@ public class TimeManager : MonoBehaviour
     private bool raceStarted;
 
     public static Action<float> OnAdjustTime;
+    
     public static Action<int, bool, GameMode> OnSetTime;
+
+    
+    FMODUnity.StudioEventEmitter sound;
+    [SerializeField]
+    private GameObject refAud;
+    [SerializeField]
+    private bool mtra = false;
+    [SerializeField]
+    private float mtratime = 0;
 
     private void Awake()
     {
         IsFinite = false;
         TimeRemaining = TotalTime;
         Debug.Log(TotalTime);
+    }
+
+    private void Start()
+    {
+        if (refAud != null)
+        {
+            sound = refAud.GetComponent<FMODUnity.StudioEventEmitter>();
+        }
     }
 
 
@@ -60,6 +80,21 @@ public class TimeManager : MonoBehaviour
                 IsOver = true;
             }
         }
+        if (mtra)
+        {
+            if(mtratime<30.0f)
+                mtratime += Time.deltaTime/2;
+            else
+            {
+                mtra = false;
+            }
+            
+            if (sound != null)
+            {
+                sound.SetParameter("trantime", mtratime);
+            }
+
+        }
     }
 
     public void StartRace()
@@ -69,6 +104,11 @@ public class TimeManager : MonoBehaviour
 
     public void StopRace() {
         raceStarted = false;
+    }
+
+    public void SetTransformation(bool state)
+    {
+        mtra = state;
     }
 }
 

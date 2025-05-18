@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Event1/Parameter 1
+  m_Name: parameter:/Event1/JumpToSong
   m_EditorClassIdentifier: 
-  Name: Parameter 1
+  Name: JumpToSong
   StudioPath: 
   Min: 0
   Max: 10
@@ -21,6 +21,30 @@ MonoBehaviour:
     data1: 3240867187
     data2: 1192128387
   Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3813377060952571223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Event1/trantime
+  m_EditorClassIdentifier: 
+  Name: trantime
+  StudioPath: 
+  Min: 0
+  Max: 30
+  Default: 0
+  ID:
+    data1: 1541873315
+    data2: 3048253212
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -47,10 +71,58 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 3930366218512079016}
   cacheVersion: 131847
-  cacheTime: 638827683036004809
+  cacheTime: 638831642044721731
   SerializableEventsDict:
   - key: event:/Event1
     index: 0
+--- !u!114 &755431273539743478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Event1/JumpT
+  m_EditorClassIdentifier: 
+  Name: JumpT
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 1281787847
+    data2: 436837733
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1985040538120289237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Event1/Ontrack
+  m_EditorClassIdentifier: 
+  Name: Ontrack
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 1853043653
+    data2: 2001673098
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3796018134291286478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,10 +138,10 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638827683035994795
+  lastModified: 638831642044696264
   FileSizes:
   - Name: Desktop
-    Value: 6902080
+    Value: 10288736
   Exists: 1
 --- !u!114 &3930366218512079016
 MonoBehaviour:
@@ -86,10 +158,10 @@ MonoBehaviour:
   Path: AudioProyect/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638827683036004809
+  lastModified: 638831642044721731
   FileSizes:
   - Name: Desktop
-    Value: 808
+    Value: 938
   Exists: 1
 --- !u!114 &4025497674974944452
 MonoBehaviour:
@@ -116,6 +188,9 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -7745762005909960306}
+  - {fileID: 755431273539743478}
+  - {fileID: -3813377060952571223}
+  - {fileID: 1985040538120289237}
   MinDistance: 1
   MaxDistance: 20
-  Length: 304000
+  Length: 355000
